@@ -1,0 +1,166 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L promicro:ProMicro U1
+U 1 1 6169522B
+P 4950 2600
+F 0 "U1" H 4950 3637 60  0000 C CNN
+F 1 "ProMicro" H 4950 3531 60  0000 C CNN
+F 2 "promicro:ProMicro-NoSilk" H 5050 1550 60  0001 C CNN
+F 3 "" H 5050 1550 60  0000 C CNN
+	1    4950 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2350 3750 2350
+Text Label 3450 2350 0    50   ~ 0
+ADB
+Wire Wire Line
+	5650 1950 6450 1950
+$Comp
+L power:GND #PWR06
+U 1 1 616962CE
+P 6450 1950
+F 0 "#PWR06" H 6450 1700 50  0001 C CNN
+F 1 "GND" H 6455 1777 50  0000 C CNN
+F 2 "" H 6450 1950 50  0001 C CNN
+F 3 "" H 6450 1950 50  0001 C CNN
+	1    6450 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2150 6200 2150
+$Comp
+L power:VCC #PWR05
+U 1 1 616966DD
+P 6200 2150
+F 0 "#PWR05" H 6200 2000 50  0001 C CNN
+F 1 "VCC" H 6215 2323 50  0000 C CNN
+F 2 "" H 6200 2150 50  0001 C CNN
+F 3 "" H 6200 2150 50  0001 C CNN
+	1    6200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2350 3750 2150
+Connection ~ 3750 2350
+Wire Wire Line
+	3750 2350 3450 2350
+$Comp
+L Device:R R1
+U 1 1 616969BB
+P 3750 2000
+F 0 "R1" H 3820 2046 50  0000 L CNN
+F 1 "R" H 3820 1955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3680 2000 50  0001 C CNN
+F 3 "~" H 3750 2000 50  0001 C CNN
+	1    3750 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1850 3750 1650
+$Comp
+L power:VCC #PWR04
+U 1 1 616973CE
+P 3750 1650
+F 0 "#PWR04" H 3750 1500 50  0001 C CNN
+F 1 "VCC" H 3765 1823 50  0000 C CNN
+F 2 "" H 3750 1650 50  0001 C CNN
+F 3 "" H 3750 1650 50  0001 C CNN
+	1    3750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Female J1
+U 1 1 61697BD7
+P 2900 3450
+F 0 "J1" H 2928 3476 50  0000 L CNN
+F 1 "Conn_01x05_Female" H 2928 3385 50  0000 L CNN
+F 2 "kicad-footprints-perso:adb_connector" H 2900 3450 50  0001 C CNN
+F 3 "~" H 2900 3450 50  0001 C CNN
+	1    2900 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3250 1700 3250
+Wire Wire Line
+	1700 3250 1700 3400
+$Comp
+L power:GND #PWR01
+U 1 1 61698927
+P 1700 3400
+F 0 "#PWR01" H 1700 3150 50  0001 C CNN
+F 1 "GND" H 1705 3227 50  0000 C CNN
+F 2 "" H 1700 3400 50  0001 C CNN
+F 3 "" H 1700 3400 50  0001 C CNN
+	1    1700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3450 1950 3450
+Wire Wire Line
+	1950 3450 1950 3400
+$Comp
+L power:VCC #PWR02
+U 1 1 61698F00
+P 1950 3400
+F 0 "#PWR02" H 1950 3250 50  0001 C CNN
+F 1 "VCC" H 1965 3573 50  0000 C CNN
+F 2 "" H 1950 3400 50  0001 C CNN
+F 3 "" H 1950 3400 50  0001 C CNN
+	1    1950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3350 2150 3350
+Text Label 2150 3350 0    50   ~ 0
+ADB
+Wire Wire Line
+	2700 3650 2500 3650
+Wire Wire Line
+	2500 3650 2500 3750
+$Comp
+L power:GND #PWR03
+U 1 1 61699986
+P 2500 3750
+F 0 "#PWR03" H 2500 3500 50  0001 C CNN
+F 1 "GND" H 2505 3577 50  0000 C CNN
+F 2 "" H 2500 3750 50  0001 C CNN
+F 3 "" H 2500 3750 50  0001 C CNN
+	1    2500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2150 4100 2150
+Wire Wire Line
+	4100 2150 4100 2200
+$Comp
+L power:GND #PWR?
+U 1 1 616A5151
+P 4100 2200
+F 0 "#PWR?" H 4100 1950 50  0001 C CNN
+F 1 "GND" H 4105 2027 50  0000 C CNN
+F 2 "" H 4100 2200 50  0001 C CNN
+F 3 "" H 4100 2200 50  0001 C CNN
+	1    4100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2050 4100 2050
+Wire Wire Line
+	4100 2050 4100 2150
+Connection ~ 4100 2150
+$EndSCHEMATC
